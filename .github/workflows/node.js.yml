@@ -27,7 +27,6 @@
                 with:
                   node-version: ${{ matrix.node-version }}
               - run: npm i mongodb
-              - run: mkdir data/db
               - run: mongod --dbpath=./data/db
               - run: npm i
               - run: npm test
